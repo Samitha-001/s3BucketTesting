@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="amazons3-connector" groupId="com.example.lib" version="2.0.7" type="synapse/lib" serverRole="EnterpriseServiceBus">
+        <file>amazons3-connector-2.0.7.zip</file>
+    </artifact>
+</artifacts>

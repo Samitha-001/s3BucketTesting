@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="AMAZON_S3_CONNECTION_1" xmlns="http://ws.apache.org/ns/synapse">
+    <amazons3.init>
+        <name>AMAZON_S3_CONNECTION_1</name>
+        <region>US</region>
+        <connectionType>amazons3</connectionType>
+    </amazons3.init>
+</localEntry>

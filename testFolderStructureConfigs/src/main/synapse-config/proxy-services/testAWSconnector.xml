@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="testAWSconnector" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <log level="custom">
+                <property name="INFO" value="Before creating s3 bucket"/>
+            </log>
+            <amazons3.createBucket configKey="AMAZON_S3_CONNECTION_1">
+                <bucketName>studentDetails</bucketName>
+                <bucketRegion>ap-east-1</bucketRegion>
+                <acl>public-read</acl>
+                <objectLockEnabledForBucket>true</objectLockEnabledForBucket>
+            </amazons3.createBucket>
+            <log level="custom">
+                <property name="INFO" value="After creating bucket"/>
+            </log>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>
